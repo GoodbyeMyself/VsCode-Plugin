@@ -1,0 +1,564 @@
+{
+	"el-container": {
+		"prefix": "el-container",
+		"body": [
+		  "<el-container>",
+		  "    <el-header>Header</el-header>",
+		  "    <el-main>Main</el-main>",
+		  "</el-container>"
+		],
+		"description": "el-container"
+	},
+	"el-row": {
+		"prefix": "el-row",
+		"body": [
+		  "<el-row :gutter=\"12\">",
+		  "    <el-col :span=\"6\">",
+		  "        xxx",
+		  "    </el-col>",
+		  "    <el-col :span=\"6\">",
+		  "        xxx",
+		  "    </el-col>",
+		  "</el-row>"
+		],
+		"description": "el-row"
+	},
+	"el-button": {
+		"prefix": "el-button",
+		"body": [
+		   "<el-button type=\"primary\">主要按钮</el-button>"
+		],
+		"description": "el-button"
+	},
+	"el-link": {
+		"prefix": "el-link",
+		"body": [
+		  "<el-link type=\"primary\">主要链接</el-link>"
+		],
+		"description": "el-link"
+	},
+	"el-radio-group": {
+		"prefix": "el-radio-group",
+		"body": [
+		  "<el-radio-group v-model=\"radio\">",
+		  "    <el-radio :label=\"3\">备选项</el-radio>",
+		  "    <el-radio :label=\"6\">备选项</el-radio>",
+		  "    <el-radio :label=\"9\">备选项</el-radio>",
+		  "</el-radio-group>"
+		],
+		"description": "el-radio-group"
+	},
+	"el-checkbox-group": {
+		"prefix": "el-checkbox-group",
+		"body": [
+		  "<el-checkbox-group v-model=\"checkList\">",
+		  "    <el-checkbox label=\"复选框 A\"></el-checkbox>",
+		  "    <el-checkbox label=\"复选框 B\"></el-checkbox>",
+		  "    <el-checkbox label=\"复选框 C\"></el-checkbox>",
+		  "    <el-checkbox label=\"禁用\" disabled></el-checkbox>",
+		  "    <el-checkbox label=\"选中且禁用\" disabled></el-checkbox>",
+		  "</el-checkbox-group>"
+		],
+		"description": "el-checkbox-group"
+	},
+	"el-input": {
+		"prefix": "el-input",
+		"body": [
+		  "<el-input v-model=\"input\" placeholder=\"请输入内容\"></el-input>"
+		],
+		"description": "el-input"
+	},
+	"el-textarea": {
+		"prefix": "el-textarea",
+		"body": [
+		  "<el-input",
+		  "    type=\"textarea\"",
+		  "    :maxlength=\"1000\"",
+		  "    :rows=\"4\"",
+		  "    show-word-limit",
+		  "></el-input>"
+		],
+		"description": "el-textarea"
+	},
+	"el-input-number": {
+		"prefix": "el-input-number",
+		"body": [
+		  "<el-input-number",
+		  "    v-model=\"xxx\"",
+		  "    :precision=\"0\"",
+		  "    :step=\"1\"",
+		  "    :min=\"0\"",
+		  "    :max=\"9999\"",
+		  "></el-input-number>"
+		],
+		"description": "el-input-number"
+	},
+	"el-select": {
+		"prefix": "el-select",
+		"body": [
+		  "<el-select v-model=\"value\" placeholder=\"请选择\">",
+		  "    <el-option",
+		  "        v-for=\"item in options\"",
+		  "        :key=\"item.value\"",
+		  "        :label=\"item.label\"",
+		  "        :value=\"item.value\"",
+		  "    >",
+		  "    </el-option>",
+		  "</el-select>"
+		],
+		"description": "el-select"
+	},
+	"el-cascader": {
+		"prefix": "el-cascader",
+		"body": [
+		  "<el-cascader",
+		  "    v-model=\"value\"",
+		  "    :options=\"options\"",
+		  "    :props=\"{",
+		  "        expandTrigger: 'hover'",
+		  "    }\"",
+		  "    @change=\"handleChange\"",
+		  "></el-cascader>"
+		],
+		"description": "el-cascader"
+	},
+	"el-switch": {
+		"prefix": "el-switch",
+		"body": [
+		  "<el-switch",
+		  "    v-model=\"value\"",
+		  "    active-color=\"#13ce66\"",
+		  "    inactive-color=\"#ff4949\"",
+		  ">",
+		  "</el-switch>"
+		],
+		"description": "el-switch"
+	},
+	"el-slider": {
+		"prefix": "el-slider",
+		"body": [
+		  "<el-slider v-model=\"value\"></el-slider>"
+		],
+		"description": "el-slider"
+	},
+	"el-time-picker": {
+		"prefix": "el-time-picker",
+		"body": [
+		  "<el-time-picker",
+		  "    v-model=\"value\"",
+		  "    is-range",
+		  "    range-separator=\"至\"",
+		  "    start-placeholder=\"开始日期\"",
+		  "    end-placeholder=\"结束日期\"",
+		  "    format=\"HH:mm:ss\"",
+		  "    value-format=\"timestamp\"",
+		  "    @change='(val)=>{ changeDateRange(val, item) }'",
+		  ">",
+		  "</el-time-picker>",
+		  "                                    "
+		],
+		"description": "el-time-picker"
+	},
+	"el-date-picker": {
+		"prefix": "el-date-picker",
+		"body": [
+		  "<el-date-picker",
+		  "    v-model=\"value\"",
+		  "    type=\"datetimerange\"",
+		  "    range-separator=\"至\"",
+		  "    start-placeholder=\"开始日期\"",
+		  "    end-placeholder=\"结束日期\"",
+		  "    format=\"yyyy-MM-dd HH:mm:ss\"",
+		  "    value-format=\"timestamp\"",
+		  "    @change='(val)=>{ changeDateRange(val, item) }'",
+		  ">",
+		  "</el-date-picker>"
+		],
+		"description": "el-date-picker"
+	},
+	"el-upload": {
+		"prefix": "el-upload",
+		"body": [
+		  "<el-upload",
+		  "    ref=\"upload\"",
+		  "    :multiple=\"true\"",
+		  "    :auto-upload=\"true\"",
+		  "    :data=\"uploadData\"",
+		  "    :action=\"action\"",
+		  "    :on-change=\"onChangeFun\"",
+		  "    :on-remove=\"onRemoveFun\"",
+		  "    :on-success=\"uploadSuccess\"",
+		  "    :before-upload=\"beforeUpload\"",
+		  ">",
+		  "</el-upload>"
+		],
+		"description": "el-upload"
+	},
+	"el-rate": {
+		"prefix": "el-rate",
+		"body": [
+		  "<el-rate v-model=\"value\"></el-rate>"
+		],
+		"description": "el-rate"
+	},
+	"el-color-picker": {
+		"prefix": "el-color-picker",
+		"body": [
+		  "<el-color-picker v-model=\"color\"></el-color-picker>"
+		],
+		"description": "el-color-picker"
+	},
+	"el-transfer": {
+		"prefix": "el-transfer",
+		"body": [
+		  "<el-transfer",
+		  "    v-model=\"value\"",
+		  "    filterable",
+		  "    :left-default-checked=\"[]\"",
+		  "    :right-default-checked=\"[]\"",
+		  "    :titles=\"['Source', 'Target']\"",
+		  "    :button-texts=\"['到左边', '到右边']\"",
+		  "    :format=\"{",
+		  "        noChecked: '${total}',",
+		  "        hasChecked: '${checked}/${total}'",
+		  "    }\"",
+		  "    @change=\"handleChange\"",
+		  "    :data=\"data\"",
+		  ">",
+		  "    <span slot-scope=\"{ option }\">",
+		  "        {{ option.key }} - {{ option.label }}",
+		  "    </span>",
+		  "    <el-button class=\"transfer-footer\" slot=\"left-footer\" size=\"small\">",
+		  "        操作",
+		  "    </el-button>",
+		  "    <el-button class=\"transfer-footer\" slot=\"right-footer\" size=\"small\">",
+		  "        操作",
+		  "    </el-button>",
+		  "</el-transfer>"
+		],
+		"description": "el-transfer"
+	},
+	"el-form": {
+		"prefix": "el-form",
+		"body": [
+		  "<!-- form 表单 -->",
+		  "<el-form",
+		  "    ref=\"form\"",
+		  "    label-width=\"100px\"",
+		  "    :model=\"form\"",
+		  "    :rules=\"rules\"",
+		  ">",
+		  "    <el-row>",
+		  "        <el-col :span=\"24\">",
+		  "            <el-form-item label=\"label 文案\">",
+		  "                <el-input v-model=\"xxx\"></el-input>",
+		  "            </el-form-item>",
+		  "        </el-col>",
+		  "    </el-row>",
+		  "    <!-- 底部按钮 -->",
+		  "    <div class=\"dialog-footer\">",
+		  "        <el-button type=\"primary\" :loading=\"loading\" @click=\"_saveFun\">",
+		  "            保存",
+		  "        </el-button>",
+		  "        <el-button @click=\"_cancelFun\">",
+		  "            取消",
+		  "        </el-button>",
+		  "    </div>",
+		  "</el-form>"
+		],
+		"description": "el-form"
+	},
+	"el-table": {
+		"prefix": "el-table",
+		"body": [
+		  "<el-table :data=\"tableData\">",
+		  "    <el-table-column",
+		  "        prop=\"date\"",
+		  "        label=\"日期\"",
+		  "        width=\"180\"",
+		  "    >",
+		  "    </el-table-column>",
+		  "    <el-table-column",
+		  "        prop=\"name\"",
+		  "        label=\"姓名\"",
+		  "        width=\"180\"",
+		  "    >",
+		  "    </el-table-column>",
+		  "    <el-table-column",
+		  "        prop=\"address\"",
+		  "        label=\"地址\"",
+		  "    >",
+		  "    </el-table-column>",
+		  "</el-table>"
+		],
+		"description": "el-table"
+	},
+	"el-tag": {
+		"prefix": "el-tag",
+		"body": [
+		  "<el-tag type=\"success\">标签二</el-tag>",
+		  "<el-tag type=\"info\">标签三</el-tag>",
+		  "<el-tag type=\"warning\">标签四</el-tag>",
+		  "<el-tag type=\"danger\">标签五</el-tag>"
+		],
+		"description": "el-tag"
+	},
+	"el-progress": {
+		"prefix": "el-progress",
+		"body": [
+		  "<el-progress :percentage=\"100\" :format=\"format\"></el-progress>",
+		  "<el-progress :percentage=\"100\" status=\"success\"></el-progress>",
+		  "<el-progress :percentage=\"100\" status=\"warning\"></el-progress>",
+		  "<el-progress :percentage=\"50\" status=\"exception\"></el-progress>"
+		],
+		"description": "el-progress"
+	},
+	"el-tree": {
+		"prefix": "el-tree",
+		"body": [
+		  "<el-tree",
+		  "    :data=\"data\"",
+		  "    :props=\"defaultProps\"",
+		  "    @node-click=\"handleNodeClick\"",
+		  "></el-tree>"
+		],
+		"description": "el-tree"
+	},
+	"el-pagination": {
+		"prefix": "el-pagination",
+		"body": [
+		  "<el-pagination",
+		  "    @size-change=\"handleSizeChange\"",
+		  "    @current-change=\"handleCurrentChange\"",
+		  "    :current-page=\"4\"",
+		  "    :page-sizes=\"[100, 200, 300, 400]\"",
+		  "    :page-size=\"100\"",
+		  "    layout=\"total, sizes, prev, pager, next, jumper\"",
+		  "    :total=\"400\"",
+		  ">",
+		  "</el-pagination>"
+		],
+		"description": "el-pagination"
+	},
+	"el-badge": {
+		"prefix": "el-badge",
+		"body": [
+		  "<el-badge :value=\"12\" class=\"item\">",
+		  "    <el-button size=\"small\">评论</el-button>",
+		  "</el-badge>"
+		],
+		"description": "el-badge"
+	},
+	"el-avatar": {
+		"prefix": "el-avatar",
+		"body": [
+		  "<el-avatar icon=\"el-icon-user-solid\"></el-avatar>"
+		],
+		"description": "el-avatar"
+	},
+	"el-skeleton": {
+		"prefix": "el-skeleton",
+		"body": [
+		  "<el-skeleton :rows=\"6\" animated />"
+		],
+		"description": "el-skeleton"
+	},
+	"el-empty": {
+		"prefix": "el-empty",
+		"body": [
+		  "<el-empty :image-size=\"100\"></el-empty>"
+		],
+		"description": "el-empty"
+	},
+	"el-descriptions": {
+		"prefix": "el-descriptions",
+		"body": [
+		  "<el-descriptions",
+		  "    title=\"带边框列表\"",
+		  "    :column=\"4\"",
+		  "    border",
+		  ">",
+		  "    <el-descriptions-item label=\"用户名\">",
+		  "        uesr",
+		  "    </el-descriptions-item>",
+		  "    <el-descriptions-item label=\"手机号\">",
+		  "        18100000000",
+		  "    </el-descriptions-item>",
+		  "    <el-descriptions-item label=\"居住地\" :span=\"2\">",
+		  "        苏州市",
+		  "    </el-descriptions-item>",
+		  "    <el-descriptions-item label=\"备注\">",
+		  "        <el-tag size=\"small\">学校</el-tag>",
+		  "    </el-descriptions-item>",
+		  "    <el-descriptions-item label=\"联系地址\">",
+		  "        江苏省苏州市吴中区吴中大道 1188 号",
+		  "    </el-descriptions-item>",
+		  "</el-descriptions>"
+		],
+		"description": "el-descriptions"
+	},
+	"el-result": {
+		"prefix": "el-result",
+		"body": [
+		  "<el-result",
+		  "    icon=\"success\"",
+		  "    title=\"成功提示\"",
+		  "    subTitle=\"请根据提示进行操作\"",
+		  ">",
+		  "    <template slot=\"extra\">",
+		  "        <el-button type=\"primary\" size=\"medium\">返回</el-button>",
+		  "    </template>",
+		  "</el-result>"
+		],
+		"description": "el-result"
+	},
+	"el-alert": {
+		"prefix": "el-alert",
+		"body": [
+		  "<el-alert",
+		  "    title=\"成功提示的文案\"",
+		  "    type=\"success\"",
+		  ">",
+		  "</el-alert>"
+		],
+		"description": "el-alert"
+	},
+	"el-tabs": {
+		"prefix": "el-tabs",
+		"body": [
+		  "<el-tabs v-model=\"activeName\" @tab-click=\"handleClick\">",
+		  "    <el-tab-pane label=\"用户管理\" name=\"first\">用户管理</el-tab-pane>",
+		  "    <el-tab-pane label=\"配置管理\" name=\"second\">配置管理</el-tab-pane>",
+		  "    <el-tab-pane label=\"角色管理\" name=\"third\">角色管理</el-tab-pane>",
+		  "    <el-tab-pane label=\"定时任务补偿\" name=\"fourth\">定时任务补偿</el-tab-pane>",
+		  "</el-tabs>"
+		],
+		"description": "el-tabs"
+	},
+	"el-breadcrumb": {
+		"prefix": "el-breadcrumb",
+		"body": [
+		  "<el-breadcrumb separator=\"/\">",
+		  "    <el-breadcrumb-item :to=\"{ path: '/' }\">首页</el-breadcrumb-item>",
+		  "    <el-breadcrumb-item><a href=\"/\">活动管理</a></el-breadcrumb-item>",
+		  "    <el-breadcrumb-item>活动列表</el-breadcrumb-item>",
+		  "    <el-breadcrumb-item>活动详情</el-breadcrumb-item>",
+		  "</el-breadcrumb>"
+		],
+		"description": "el-breadcrumb"
+	},
+	"el-dropdown-menu": {
+		"prefix": "el-dropdown-menu",
+		"body": [
+		  "<el-dropdown-menu slot=\"dropdown\">",
+		  "    <el-dropdown-item>黄金糕</el-dropdown-item>",
+		  "    <el-dropdown-item>狮子头</el-dropdown-item>",
+		  "    <el-dropdown-item>螺蛳粉</el-dropdown-item>",
+		  "    <el-dropdown-item disabled>双皮奶</el-dropdown-item>",
+		  "    <el-dropdown-item divided>蚵仔煎</el-dropdown-item>",
+		  "</el-dropdown-menu>"
+		],
+		"description": "el-dropdown-menu"
+	},
+	"el-tooltip": {
+		"prefix": "el-tooltip",
+		"body": [
+		  "<el-tooltip",
+		  "    effect=\"dark\"",
+		  "    content=\"Top Left 提示文字\"",
+		  "    placement=\"top-start\"",
+		  ">",
+		  "    <el-button>上左</el-button>",
+		  "</el-tooltip>"
+		],
+		"description": "el-tooltip"
+	},
+	"el-popover": {
+		"prefix": "el-tooltip",
+		"body": [
+		  "<el-popover",
+		  "    placement=\"top-start\"",
+		  "    title=\"标题\"",
+		  "    width=\"200\"",
+		  "    trigger=\"hover\"",
+		  "    content=\"这是一段内容, 这是一段内容, 这是一段内容, 这是一段内容。\"",
+		  ">",
+		  "    <el-button slot=\"reference\">hover 激活</el-button>",
+		  "</el-popover>"
+		],
+		"description": "el-popover"
+	},
+	"el-popconfirm": {
+		"prefix": "el-popconfirm",
+		"body": [
+		  "<el-popconfirm",
+		  "    title=\"这是一段内容确定删除吗？\"",
+		  ">",
+		  "    <el-button slot=\"reference\">删除</el-button>",
+		  "</el-popconfirm>"
+		],
+		"description": "el-popconfirm"
+	},
+	"el-card": {
+		"prefix": "el-card",
+		"body": [
+		  "<el-card class=\"box-card\">",
+		  "    <div slot=\"header\" class=\"clearfix\">",
+		  "        <span>卡片名称</span>",
+		  "        <el-button style=\"float: right; padding: 3px 0\" type=\"text\">",
+		  "            操作按钮",
+		  "        </el-button>",
+		  "    </div>",
+		  "    <div v-for=\"o in 4\" :key=\"o\" class=\"text item\">",
+		  "        {{ '列表内容' + o }}",
+		  "    </div>",
+		  "</el-card>"
+		],
+		"description": "el-card"
+	},
+	"el-carousel": {
+		"prefix": "el-carousel",
+		"body": [
+		  "<el-carousel height=\"150px\">",
+		  "    <el-carousel-item v-for=\"item in 4\" :key=\"item\">",
+		  "        <h3 class=\"small\">{{ item }}</h3>",
+		  "    </el-carousel-item>",
+		  "</el-carousel>"
+		],
+		"description": "el-carousel"
+	},
+	"el-collapse": {
+		"prefix": "el-collapse",
+		"body": [
+		  "<el-collapse v-model=\"activeNames\" @change=\"handleChange\">",
+		  "    <el-collapse-item title=\"一致性 Consistency\" name=\"1\">",
+		  "        <div>xxx</div>",
+		  "    </el-collapse-item>",
+		  "    <el-collapse-item title=\"反馈 Feedback\" name=\"2\">",
+		  "        <div>xxx</div>",
+		  "    </el-collapse-item>",
+		  "</el-collapse>"
+		],
+		"description": "el-collapse"
+	},
+	"el-divider": {
+		"prefix": "el-divider",
+		"body": [
+		  "<el-divider></el-divider>"
+		],
+		"description": "el-divider"
+	},
+	"el-drawer": {
+		"prefix": "el-drawer",
+		"body": [
+		  "<el-drawer",
+		  "    title=\"我是标题\"",
+		  "    :visible.sync=\"drawer\"",
+		  "    :with-header=\"false\"",
+		  ">",
+		  "    <span>我来啦!</span>",
+		  "</el-drawer>"
+		],
+		"description": "el-drawer"
+	}
+}

@@ -1,0 +1,12 @@
+{
+    "ts-interface": {
+        "prefix": "ts-interface",
+        "body": [
+          "interface CourseResult {",
+          "    time: number;",
+          "    data: Course[];",
+          "}"
+        ],
+        "description": "ts-interface"
+    }
+}

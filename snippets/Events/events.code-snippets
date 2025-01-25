@@ -1,0 +1,43 @@
+{
+    "$nextTick": {
+		"prefix": "$nextTick",
+		"body": [
+		  "this.$nextTick(() => {",
+		  "    // todo          ",
+		  "});"
+		],
+		"description": "$nextTick"
+	},
+	"$message": {
+		"prefix": "$message",
+		"body": [
+		  "this.$message.success('提示信息');"
+		],
+		"description": "$message"
+	},
+	"$alert": {
+		"prefix": "$alert",
+		"body": [
+		  "this.$alert('提示: xxx', '系统提示', {",
+		  "    closeOnClickModal: false,",
+		  "    confirmButtonText: '确定',",
+		  "    type: 'warning',",
+		  "    callback: action => {",
+		  "        // to do",
+		  "    }",
+		  "});"
+		],
+		"description": "$alert"
+	},
+	"$notify": {
+		"prefix": "$notify",
+		"body": [
+		  "this.$notify({",
+		  "    title: '成功',",
+		  "    message: '这是一条成功的提示消息',",
+		  "    type: 'success'",
+		  "});"
+		],
+		"description": "$notify"
+	}
+}

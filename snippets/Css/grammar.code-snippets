@@ -1,0 +1,11 @@
+{
+    "ellipsis": {
+        "prefix": "ellipsis",
+        "body": [
+            "white-space: nowrap;",
+            "overflow: hidden;",
+            "text-overflow: ellipsis;"
+        ],
+        "description": "ellipsis"
+    }
+}

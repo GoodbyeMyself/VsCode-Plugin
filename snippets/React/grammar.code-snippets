@@ -1,0 +1,25 @@
+{
+    "react-component": {
+		"prefix": "react-component",
+		"body": [
+		  	"// box.js 文件",
+		  	"import React, { Component } from 'react';",
+		  	"",
+		  	"// 引入 React：将 jsx 编译为js",
+		  	"// 通过 React.createElement()",
+		  	"",
+		  	"class Box extends Component {",
+		  	"    state = {  }",
+		  	"    // component类的函数，用来返回当前组件最后的渲染html结构",
+		  	"    // render方法只能返回一个标签及所包含内容",
+		  	"    render() {",
+		  	"        return (",
+		  	"            <h1> Hello world</h1>",
+		  	"        );",
+		  	"    }",
+		  	"}",
+		  	"export default Box;"
+		],
+		"description": "react-component"
+	}
+}

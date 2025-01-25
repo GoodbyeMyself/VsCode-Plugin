@@ -1,0 +1,20 @@
+{
+    "Print to comment": {
+        "prefix": "comment",
+        "body": [
+            "/**",
+            " * @description: xxxxxxx",
+            " * @author: xxx 同学",
+            " * @date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+            "*/"
+        ],
+        "description": "对应开始标题注释"
+    },
+    "console log": {
+        "prefix": "clg",
+        "body": [
+            "console.log($1, '<- 打印 xxx');"
+        ],
+        "description": "console.log 打印日志"
+    }
+}

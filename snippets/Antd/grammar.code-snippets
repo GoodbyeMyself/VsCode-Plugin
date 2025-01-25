@@ -1,0 +1,9 @@
+{
+    "antd-icon": {
+        "prefix": "antd-icon",
+        "body": [
+            "import { DownloadOutlined } from '@ant-design/icons';"
+        ],
+        "description": "antd-icon"
+    }
+}

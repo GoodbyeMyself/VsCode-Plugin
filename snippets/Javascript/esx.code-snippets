@@ -1,0 +1,38 @@
+{
+    "esx-promise": {
+		"prefix": "esx-promise",
+		"body": [
+		  "Promise.all([",
+		  "    // xxx",
+		  "]).then(res => {",
+		  "    // to do",
+		  "}).catch(() => {",
+		  "    // to do",
+		  "});"
+		],
+		"description": "esx-promise"
+	},
+	"esx-object-keys": {
+		"prefix": "esx-object-keys",
+		"body": [
+		  "Object.keys(data).forEach(key => {",
+		  "    // todo",
+		  "});"
+		],
+		"description": "esx-object-keys"
+	},
+	"esx-stringify": {
+		"prefix": "esx-stringify",
+		"body": [
+		  "JSON.stringify();"
+		],
+		"description": "esx-stringify"
+	},
+	"esx-parse": {
+		"prefix": "esx-parse",
+		"body": [
+		  "JSON.parse();"
+		],
+		"description": "esx-parse"
+	}
+}

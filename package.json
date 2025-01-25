@@ -1,0 +1,170 @@
+{
+    "name": "development-tool",
+    "displayName": "Development Tool",
+    "description": "开发工具扩展~",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.76.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "icon": "images/icon.png",
+    "main": "./src/extension",
+    "contributes": {
+        "snippets": [
+            {
+                "path": "./snippets/Python/grammar.code-snippets"
+            },
+            {
+                "path": "./snippets/CI/grammar.code-snippets"
+            },
+            {
+                "path": "./snippets/React/grammar.code-snippets"
+            },
+            {
+                "path": "./snippets/Vue/grammar.code-snippets"
+            },
+            {
+                "path": "./snippets/Javascript/js.code-snippets"
+            },
+            {
+                "path": "./snippets/Javascript/esx.code-snippets"
+            },
+            {
+                "path": "./snippets/Typescript/grammar.code-snippets"
+            },
+            {
+                "path": "./snippets/Css/grammar.code-snippets"
+            },
+            {
+                "path": "./snippets/Code/grammar.code-snippets"
+            },
+            {
+                "path": "./snippets/Events/events.code-snippets"
+            },
+            {
+                "path": "./snippets/Antd/grammar.code-snippets"
+            },
+            {
+                "path": "./snippets/Element/grammar.code-snippets"
+            },
+            {
+                "path": "./snippets/User/M.yunlong/grammar.code-snippets"
+            }
+        ],
+        "commands": [
+            {
+                "title": "Hello World",
+                "command": "extension.sayHello"
+            }, {
+                "title": "获取当前 文件(夹) 路径",
+                "command": "extension.demo.getCurrentFilePath"
+            }, {
+                "command": "extension.demo.testMenuShow",
+                "title": "这是一个自定义工具",
+                "icon": {
+                    "light": "./images/tool.svg",
+                    "dark": "./images/tool.svg"
+                }
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.sayHello",
+                "key": "ctrl+f10",
+                "mac": "cmd+f10",
+                "when": "editorTextFocus",
+                "group": "6_test"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "submenu": "extensionsubmenu",
+                    "group": "1_a"
+                }
+            ],
+            "extensionsubmenu": [
+                {
+                    "when": "editorFocus",
+                    "command": "extension.sayHello",
+                    "group": "1_a"
+                }, {
+                    "when": "editorFocus",
+                    "command": "extension.demo.getCurrentFilePath"
+                }
+            ],
+            "editor/title": [
+                {
+                    "when": "editorFocus && resourceLangId == javascript",
+                    "command": "extension.demo.testMenuShow",
+                    "group": "navigation"
+                }
+            ],
+            "editor/title/context": [
+                {
+                    "when": "resourceLangId == javascript",
+                    "command": "extension.demo.testMenuShow",
+                    "group": "navigation"
+                }
+            ],
+            "explorer/context": [
+                {
+                    "command": "extension.demo.getCurrentFilePath",
+                    "group": "navigation"
+                }
+            ]
+        },
+        "submenus": [
+            {
+                "id": "extensionsubmenu",
+                "label": "M.yunlong"
+            }
+        ],
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "customContanier",
+                    "title": "自定义容器",
+                    "icon": "images/custom.svg"
+                }
+            ]
+        },
+        "views": {
+            "customContanier": [
+                {
+                    "id": "customContanier-1",
+                    "name": "自定义-变量"
+                },
+                {
+                    "id": "customContanier-2",
+                    "name": "自定义-监视"
+                },
+                {
+                    "id": "customContanier-3",
+                    "name": "自定义-调用堆栈"
+                }
+            ]
+        }
+    },
+    "activationEvents": [
+        "*"
+    ],
+    "publisher": "M.yunlong",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https:// xxx"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "author": {
+        "name": "M.yunlong"
+    }
+}
