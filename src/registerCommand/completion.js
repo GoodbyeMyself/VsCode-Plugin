@@ -1,6 +1,12 @@
 const vscode = require('vscode');
 
 /**
+ * @description: test
+ * @author: M.yunlong
+ * @date: 2025-04-24 14:44:20
+*/
+
+/**
  * 自动提示实现，这里模拟一个很简单的操作
  * 键入一个字符时触发，在此阶段提供代码文本。接受vscode传入的当前文档（document）和当前光标位置（position），通过这两个参数获取当前行输入的文本
  * @param {*} document 
