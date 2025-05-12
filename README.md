@@ -12,10 +12,6 @@ vsCdoe 最低版本 兼容 1.76
 
 Users appreciate release notes as you update your extension.
 
-### 1.0.0
-
-第一版本 ...
-
 ---
 
 ## For more information
